@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'tzy';
+    /* 字体名自定义即可 */
+    src: url("/css/ZhuZiAWan.woff2");
+    /* 字体文件路径 */
+    font-display: swap;
+}
+
+
+.jg-caption{
+    text-align: center !important;
+}
+
+div#menus {
+    flex: 1 1 auto;
+    display: flex;
+    z-index: 100;
+}
+#nav .menus_items {
+    margin: auto;
+}
