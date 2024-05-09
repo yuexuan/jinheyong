@@ -116,7 +116,10 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/yuexuan/jinheyong
+  # example, https://github.com/hexojs/hexojs.github.io
+  branch: gh-pages
 
 search:
   path: search.xml
@@ -171,4 +174,5 @@ douban:
     option:
       aside: false
       comments: false     
-  timeout: 10000 
+  timeout: 10000
+
