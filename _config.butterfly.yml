@@ -237,7 +237,7 @@ footer:
 
 ICP:
   enable: ture
-  pic: /images/beian.png  #备案国徽小图路径
+  pic: /jinheyong/images/beian.png  #备案国徽小图路径
   url: http://www.beian.gov.cn
   text: 沪ICP备2021020687号-1
 

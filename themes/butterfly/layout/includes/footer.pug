@@ -18,5 +18,5 @@
   if theme.ICP.enable
     .icp
       a(href=theme.ICP.url target="_blank")
-        img.lozad(src=`url_for(${theme.ICP.pic})` data-src=`${theme.ICP.pic}` onerror=`onerror=null;src='${theme.ICP.pic}'` style="padding:0px;vertical-align: text-bottom;")
+        img.lozad(src=`${theme.ICP.pic}` data-src=`${theme.ICP.pic}` onerror=`onerror=null;src='${theme.ICP.pic}'` style="padding:0px;vertical-align: text-bottom;")
         span= ` ${theme.ICP.text}`
