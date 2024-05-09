@@ -203,7 +203,7 @@ date: 2022-06-18 18:04:39
 <!-- tab 预览  -->
 
 <!-- ![](https://www.nickxu.top/static/favicon.jpg) -->
-![](/images/my_avatar.jpeg)
+![](/jinheyong/images/my_avatar.jpeg)
 <!-- endtab -->
 
 {% endtabs %}
