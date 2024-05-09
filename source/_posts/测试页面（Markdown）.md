@@ -204,6 +204,7 @@ date: 2022-06-18 18:04:39
 
 <!-- ![](https://www.nickxu.top/static/favicon.jpg) -->
 ![](/jinheyong/images/my_avatar.jpeg)
+![](/jinheyong/images/cover/cover10.jpg)
 <!-- endtab -->
 
 {% endtabs %}
