@@ -125,7 +125,8 @@ deploy:
   # repo: https://github.com/yuexuan/yuexuan.github.io
   # example, https://github.com/hexojs/hexojs.github.io
   branch: master
-  token: ${{ secrets.BLOG_TOKEN }}
+  # token: ${{ secrets.BLOG_TOKEN }}
+  token: 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
   name: yuxian
   email: 379635119@gmail.com
 
