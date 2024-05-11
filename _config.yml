@@ -117,18 +117,19 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  # github:
-  #   url: https://oauth2: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@github.com/yuexuan/yuexuan.github.io
-  #   branch: master
-  #   token: ${{ BLOG_TOKEN }}
-  repo: https://oauth2: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@github.com/yuexuan/yuexuan.github.io
+  github:
+    url: https://oauth2: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@github.com/yuexuan/yuexuan.github.io
+    branch: master
+    token: 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
+  # repo: https://oauth2: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@github.com/yuexuan/yuexuan.github.io
   # repo: https://github.com/yuexuan/yuexuan.github.io
   # example, https://github.com/hexojs/hexojs.github.io
-  branch: master
+  # branch: master
   # token: ${{ secrets.BLOG_TOKEN }}
-  token: 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
+  # token: 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
   name: yuxian
   email: 379635119@gmail.com
+  ignore_hidden: false
 
 search:
   path: search.xml
