@@ -9,7 +9,7 @@ jobs:
     env:
         MY_VARIABLE: "cat dog"
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        ACCESS_TOKEN: "testtoken"
+        ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
 
@@ -38,6 +38,7 @@ jobs:
           echo "Node version is `node -v`"
           echo "NPM version is `npm -v`"
           echo "Check my value = $MY_VARIABLE "
+
 
       - name: Build & Deploy
         run: |
