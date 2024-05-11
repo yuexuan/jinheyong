@@ -154,9 +154,9 @@ nofollow:
   exclude:
 
 
-# markdown:
-#     plugins:
-#       - '@renbaoshuo/markdown-it-katex'
+markdown:
+    plugins:
+      - '@renbaoshuo/markdown-it-katex'
 
 douban:
   id: 48279108
