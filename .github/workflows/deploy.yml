@@ -30,6 +30,7 @@ jobs:
         run: |
           echo "Node version is `node -v`"
           echo "NPM version is `npm -v`"
+          echo "Check token ${{ secrets.ACCESS_TOKEN }} "
 
       - name: Build & Deploy
         run: |
