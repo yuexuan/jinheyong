@@ -104,9 +104,9 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-include:
-exclude:
-ignore:
+# include: 
+# exclude: 
+# ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
@@ -151,9 +151,9 @@ nofollow:
   exclude:
 
 
-markdown:
-    plugins:
-      - '@renbaoshuo/markdown-it-katex'
+# markdown:
+#     plugins:
+#       - '@renbaoshuo/markdown-it-katex'
 
 douban:
   id: 48279108

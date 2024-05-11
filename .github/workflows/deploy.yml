@@ -29,7 +29,7 @@ jobs:
       - name: Check npm & node version
         run: |
           echo "Node version is `node -v`"
-          echo "Yarn version is `npm -v`"
+          echo "NPM version is `npm -v`"
 
       - name: Build & Deploy
         run: |
