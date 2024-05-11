@@ -1,0 +1,36 @@
+name: Deploy hexo blog
+on:
+  push:
+    branches:
+      - "master"
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: "master"
+
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+
+      - name: Cache NPM dependencies
+        uses: actions/cache@v4
+        with:
+            path: node_modules
+            key: ${{ runner.OS }}-npm-cache
+            restore-keys: |
+                ${{ runner.OS }}-npm-cache
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Check npm & node version
+        run: |
+          echo "Node version is `node -v`"
+          echo "Yarn version is `npm -v`"
+
+      - name: Build & Deploy
+        run: |
+          npm run deploy
