@@ -117,10 +117,11 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  github:
-    url: https://oauth2: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@github.com/yuexuan/yuexuan.github.io
-    branch: master
-    token: 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
+  repo:
+    github:
+      url: https://oauth2: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@github.com/yuexuan/yuexuan.github.io
+      branch: master
+      token: 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
   # repo: https://oauth2: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@github.com/yuexuan/yuexuan.github.io
   # repo: https://github.com/yuexuan/yuexuan.github.io
   # example, https://github.com/hexojs/hexojs.github.io
