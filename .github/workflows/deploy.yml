@@ -6,6 +6,10 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+        MY_VARIABLE: "cat dog"
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     steps:
 
       - uses: actions/checkout@v3
@@ -27,13 +31,12 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-        env:
-            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Check npm & node version
         run: |
           echo "Node version is `node -v`"
           echo "NPM version is `npm -v`"
-          echo "Check token ${{ secrets.GITHUB_TOKEN }} "
+          echo "Check my value = $MY_VARIABLE "
 
       - name: Build & Deploy
         run: |
