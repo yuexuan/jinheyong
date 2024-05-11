@@ -7,6 +7,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+
       - uses: actions/checkout@v3
         with:
           ref: "master"
@@ -26,11 +27,13 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+        env:
+            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Check npm & node version
         run: |
           echo "Node version is `node -v`"
           echo "NPM version is `npm -v`"
-          echo "Check token ${{ secrets.ACCESS_TOKEN }} "
+          echo "Check token ${{ secrets.GITHUB_TOKEN }} "
 
       - name: Build & Deploy
         run: |
