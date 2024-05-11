@@ -9,6 +9,7 @@ jobs:
     env:
         MY_VARIABLE: "cat dog"
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        ACCESS_TOKEN: "testtoken"
 
     steps:
 
