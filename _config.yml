@@ -117,11 +117,11 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: ${REPO_URL}
+  repo: $REPO_URL
   # repo: https://github.com/yuexuan/yuexuan.github.io
   # example, https://github.com/hexojs/hexojs.github.io
   branch: master
-  token: ${BLOG_TOKEN}
+  token: $BLOG_TOKEN
   name: yuxian
   email: 379635119@gmail.com
 
