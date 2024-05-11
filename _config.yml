@@ -120,6 +120,9 @@ deploy:
   repo: https://github.com/yuexuan/yuexuan.github.io.git
   # example, https://github.com/hexojs/hexojs.github.io
   branch: master
+  token: ${BLOG_TOKEN}
+  name: yuxian
+  email: 379635119@gmail.com
 
 search:
   path: search.xml
