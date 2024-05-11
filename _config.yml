@@ -119,7 +119,7 @@ deploy:
   type: git
   repo:
     github:
-      url: https://oauth2:${{ secrets.BLOG_TOKEN }}@github.com/yuexuan/yuexuan.github.io
+      url: https://github.com/yuexuan/yuexuan.github.io.git
       branch: master
       token: ${{ secrets.BLOG_TOKEN }}
   # repo: https://oauth2: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@github.com/yuexuan/yuexuan.github.io
