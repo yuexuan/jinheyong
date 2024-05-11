@@ -117,7 +117,8 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/yuexuan/yuexuan.github.io.git
+  #repo: https://oauth2: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@github.com/yuexuan/yuexuan.github.io
+  repo: https://github.com/yuexuan/yuexuan.github.io
   # example, https://github.com/hexojs/hexojs.github.io
   branch: master
   token: ${BLOG_TOKEN}
