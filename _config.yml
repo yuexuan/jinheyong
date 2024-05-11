@@ -121,7 +121,7 @@ deploy:
     github:
       url: https://github.com/yuexuan/yuexuan.github.io.git
       branch: master
-      token: ${{ secrets.ACCESS_TOKEN }}
+      token: '${{ secrets.ACCESS_TOKEN }}'
   # repo: https://oauth2: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@github.com/yuexuan/yuexuan.github.io
   # repo: https://github.com/yuexuan/yuexuan.github.io
   # example, https://github.com/hexojs/hexojs.github.io
