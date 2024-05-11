@@ -34,6 +34,8 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+      - name: Delopy
+        run: npm run adeploy
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
