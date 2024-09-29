@@ -264,7 +264,7 @@ aside:
       link: https://github.com/yuexuan
   card_announcement:
     enable: true
-    content:  网站建设中 / 游戏研发学习中，请多多关照！
+    content:  专注AI / 围绕AI / 服务AI！
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
