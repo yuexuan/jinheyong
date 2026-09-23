@@ -99,8 +99,8 @@ deploy:
     github:
       url: https://github.com/yuexuan/yuexuan.github.io.git
       branch: master
-name: GitHubAciton
-  email: github@gmail.com
+  name: GitHubAction
+  email: github-actions[bot]@users.noreply.github.com
   ignore_hidden: false
 
 search:
