@@ -1,14 +1,7 @@
-#### 安装
+# 今何用
 
-npm install
+个人博客源码，基于 Hexo + Butterfly。
 
-#### 运行
+当前主要记录：金融与市场、量化研究、投资笔记、技术与 AI、社会与经济，以及随笔与思考。
 
-npm run server
-
-#### 部署
-
-npm run deloy
-
-必要的时候，可以先运行 ·hexo clean·  清空
-
+站点：https://yuexuan.github.io
