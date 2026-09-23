@@ -99,8 +99,7 @@ deploy:
     github:
       url: https://github.com/yuexuan/yuexuan.github.io.git
       branch: master
-      token: $ACCESS_TOKEN
-  name: GitHubAciton
+name: GitHubAciton
   email: github@gmail.com
   ignore_hidden: false
 
