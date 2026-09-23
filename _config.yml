@@ -4,36 +4,32 @@
 
 # Site
 title: 今何用
-subtitle: '娱乐不至死，编程有深度'
-description: '踏歌而行八荒路，万古长空一朝游。'
-keywords: Unity Game, UE5 Game, Nextjs, AIGC, SpringBoot, NoDB
+subtitle: '金融学习 · 量化研究 · 技术实践 · 个人思考'
+description: '记录金融学习、量化研究、技术实践与个人思考。记录判断，也记录判断如何改变。'
+keywords: 金融学习, 量化研究, 投资笔记, 宏观经济, A股, Alpha, AI, 软件工程, 个人思考
 author: 今何用
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
-## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://yuexuan.github.io
-#permalink: :year/:month/:day/:title/
 permalink: posts/:abbrlink.html
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
-## abbrlink config
+  trailing_index: true
+  trailing_html: true
+
 abbrlink:
-  alg: crc32      #support crc16(default) and crc32 进制
-  rep: hex        #support dec(default) and hex  算法
-  drafts: false   #(true)Process draft,(false)Do not process draft. false(default) 
-  ## Generate categories from directory-tree
-  ## depth: the max_depth of directory-tree you want to generate, should > 0
+  alg: crc32
+  rep: hex
+  drafts: false
   auto_category:
-     enable: true  #true(default)
-     depth:        #3(default)
-     over_write: false 
-  auto_title: false #enable auto title, it can auto fill the title by path
-  auto_date: false #enable auto date, it can auto fill the date by time today
-  force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink.
+     enable: true
+     depth:
+     over_write: false
+  auto_title: false
+  auto_date: false
+  force: false
 
 # Directory
 source_dir: source
@@ -46,12 +42,12 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :title.md
 default_layout: post
-titlecase: false # Transform title into titlecase
+titlecase: false
 external_link:
-  enable: true # Open external links in new tab
-  field: site # Apply to the whole site
+  enable: true
+  field: site
   exclude: ''
 filename_case: 0
 render_drafts: false
@@ -71,9 +67,6 @@ prismjs:
   tab_replace: ''
 
 # Home page setting
-# path: Root path for your blogs index page. (default = '')
-# per_page: Posts displayed per page. (0 = disable pagination)
-# order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
   per_page: 10
@@ -85,36 +78,21 @@ category_map:
 tag_map:
 
 # Metadata elements
-## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 meta_generator: true
 
 # Date / Time format
-## Hexo uses Moment.js to parse and display date
-## You can customize the date format as defined in
-## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
-## updated_option supports 'mtime', 'date', 'empty'
 updated_option: 'mtime'
 
 # Pagination
-## Set per_page to 0 to disable pagination
 per_page: 10
 pagination_dir: page
 
-# Include / Exclude file(s)
-## include:/exclude: options only apply to the 'source/' folder
-# include: 
-# exclude: 
-# ignore:
-
 # Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
 theme: butterfly
 
 # Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
   repo:
@@ -122,12 +100,6 @@ deploy:
       url: https://github.com/yuexuan/yuexuan.github.io.git
       branch: master
       token: $ACCESS_TOKEN
-  # repo: https://oauth2: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@github.com/yuexuan/yuexuan.github.io
-  # repo: https://github.com/yuexuan/yuexuan.github.io
-  # example, https://github.com/hexojs/hexojs.github.io
-  # branch: master
-  # token: ${{ secrets.BLOG_TOKEN }}
-  # token: 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
   name: GitHubAciton
   email: github@gmail.com
   ignore_hidden: false
@@ -139,11 +111,9 @@ search:
   format: html
 
 sitemap:
-  path: 
+  path:
     - sitemap.xml
     - sitemap.txt
-  # template: ./sitemap_template.xml
-  # template_txt: ./sitemap_template.txt
   rel: false
   tags: true
   categories: true
@@ -153,10 +123,9 @@ nofollow:
   field: site
   exclude:
 
-
 markdown:
-    plugins:
-      - '@renbaoshuo/markdown-it-katex'
+  plugins:
+    - '@renbaoshuo/markdown-it-katex'
 
 douban:
   id: 48279108
@@ -170,20 +139,19 @@ douban:
     quote: '好书分享'
     option:
       aside: false
-      comments: false 
+      comments: false
   movie:
     path: movies/index.html
     title: '豆瓣电影'
     quote: '好电影一生相随'
     option:
       aside: false
-      comments: false 
+      comments: false
   game:
     path: games/index.html
     title: '豆瓣游戏'
     quote: '体验游戏，开发游戏'
     option:
       aside: false
-      comments: false     
+      comments: false
   timeout: 10000
-
