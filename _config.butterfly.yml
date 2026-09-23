@@ -9,17 +9,11 @@ nav:
 
 # Menu 目錄
 menu:
-   首页: / || fas fa-home
-   好文|| fas fa-compass: 
-    时间线: /archives/ || fas fa-archive
-    标签: /tags/ || fas fa-tags
-    分类: /categories/ || fas fa-folder-open
-   媒体||fas fa-coffee:
-     好书: /books/ || fas fa-book-open
-     电影: /movies/ || fas fa-video
-     游戏: /games/ || fas fa-gamepad
-   友链: /link/ || fas fa-link
-   关于: /about/ || fas fa-heart
+  首页: / || fas fa-home
+  文章: /archives/ || fas fa-archive
+  分类: /categories/ || fas fa-folder-open
+  标签: /tags/ || fas fa-tags
+  关于: /about/ || fas fa-user
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -264,7 +258,7 @@ aside:
       link: https://github.com/yuexuan
   card_announcement:
     enable: true
-    content:  专注AI / 围绕AI / 服务AI！
+    content:  记录金融学习、量化研究、技术实践与个人思考。
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
